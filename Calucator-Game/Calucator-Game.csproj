@@ -54,6 +54,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resource1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource1.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -63,6 +71,10 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Resource1.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -75,6 +87,39 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_clicked_bl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_clicked_black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_clicked_cheng.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_clicked_red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_clicked_yellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_normal_bl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_normal_black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_normal_cheng.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_normal_red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_normal_yellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\panel.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
