@@ -37,7 +37,7 @@
             // 
             // button1
             // 
-            this.button1.BackgroundImage = global::Calucator_Game.Resource1.button_normal_black;
+            this.button1.BackgroundImage = global::Calucator_Game.Resource1.button_normal_red;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
@@ -80,10 +80,12 @@
             this.button2.TabIndex = 2;
             this.button2.Text = "button2";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button2_MouseDown);
+            this.button2.MouseUp += new System.Windows.Forms.MouseEventHandler(this.button2_MouseUp);
             // 
             // button3
             // 
-            this.button3.BackgroundImage = global::Calucator_Game.Resource1.button_normal_black;
+            this.button3.BackgroundImage = global::Calucator_Game.Resource1.button_normal_bl;
             this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
@@ -97,6 +99,8 @@
             this.button3.TabIndex = 3;
             this.button3.Text = "button3";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button3_MouseDown);
+            this.button3.MouseUp += new System.Windows.Forms.MouseEventHandler(this.button3_MouseUp);
             // 
             // Form1
             // 
