@@ -37,7 +37,7 @@
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BackgroundImage = global::Calucator_Game.Resource1.panel;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Location = new System.Drawing.Point(1, 1);
+            this.panel1.Location = new System.Drawing.Point(3, 1);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(350, 200);
             this.panel1.TabIndex = 0;
@@ -48,9 +48,9 @@
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(12, 207);
+            this.button1.Location = new System.Drawing.Point(110, 207);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 62);
+            this.button1.Size = new System.Drawing.Size(100, 79);
             this.button1.TabIndex = 1;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
@@ -59,7 +59,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ClientSize = new System.Drawing.Size(353, 529);
+            this.ClientSize = new System.Drawing.Size(356, 529);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panel1);
             this.Name = "Form1";
