@@ -1,13 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace Calucator_Game
 {
-   
+
     //由 http://json2csharp.chahuo.com/ 生成C#类
     public class Ops
     {
@@ -47,16 +43,6 @@ namespace Calucator_Game
             {
                 Console.WriteLine(e.ToString());
             }
-            //fs.Read(BOM, 0, 3);
-            //Encoding ScriptEncode;
-            //if (BOM[0] == 255 && BOM[1] == 254)//BOM:FF EE
-            //    ScriptEncode = Encoding.Unicode;
-            //else if (BOM[0] == 254 && BOM[1] == 255)//FE FF
-            //    ScriptEncode = Encoding.BigEndianUnicode;
-            //else if (BOM[0] == 239 && BOM[1] == 187 && BOM[2] == 191)//EF BB BF
-            //    ScriptEncode = Encoding.UTF8;
-            //else
-            //    ScriptEncode = Encoding.Default;//ANSI编码
             fs.Seek(0,System.IO.SeekOrigin.Begin);//移动到文件开始位置
             int FileSize = (int)fs.Length;
             byte[] FileBuffer = new byte[FileSize];

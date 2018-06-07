@@ -57,5 +57,11 @@ namespace Calucator_Game
         {
             button2.BackgroundImage = Resource1.button_clicked_black;
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }
