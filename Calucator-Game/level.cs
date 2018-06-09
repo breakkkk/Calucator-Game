@@ -4,25 +4,38 @@ using System.IO;
 namespace Calucator_Game
 {
 
+    
+    enum operators//op
+    {
+        plus=0,//添加
+        add,//加
+        subtract,//减
+        multiply,//乘
+        divide,//除
+        del,//删除
+        replace,//替换
+        negative//正负
+    }
     //由 http://json2csharp.chahuo.com/ 生成C#类
     public class Ops
     {
-        public string op { get; set; }
-        public string num1 { get; set; }
+        public int op { get; set; }
+        public int num1 { get; set; }
+        public int num2 { get; set; }
     }
 
     public class Level
     {
-        public string level { get; set; }
-        public string moves { get; set; }
-        public string goal { get; set; }
+        public int level { get; set; }
+        public int  moves { get; set; }
+        public int goal { get; set; }
         public List<Ops> ops { get; set; }
-    }
+    }//关卡
 
-    public class RootObject
+    public class Levels
     {
-        public string current { get; set; }
-        public List<Level> level { get; set; }
+        public int current { get; set; }
+        public List<Level> Level { get; set; }
     }
     class level
     {
