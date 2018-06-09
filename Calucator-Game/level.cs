@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using Newtonsoft.Json;
 namespace Calucator_Game
 {
-
-    
     enum operators//op
     {
         plus=0,//添加
@@ -37,16 +36,16 @@ namespace Calucator_Game
         public int current { get; set; }
         public List<Level> Level { get; set; }
     }
-    class level
+    public class level
     {
         public string content;
+
         /// <summary>
         /// 以下参考自 https://wenku.baidu.com/view/708eb63a03768e9951e79b89680203d8ce2f6a9c.html
         /// 读取指定文件路径内容
         /// </summary>
-        static string ReadFile(string FilePath)
+        public string ReadFile(string FilePath)
         {
-            byte[] BOM = new byte[3];//文件编码
             FileStream fs = null;
             try
             {
@@ -65,21 +64,23 @@ namespace Calucator_Game
             string str = System.Text.Encoding.Default.GetString(FileBuffer);
             return str;
         }
+
         /// <summary>
         /// 读出指定关卡
         /// </summary>
         /// <param name="level">关卡</param>
         /// <returns></returns>
-        public static Level ReadLevel(int level)
+        public Level ReadLevel(int level)
         {
             Level l = null;
             return l;
         }
+
         /// <summary>
         /// 读出总关卡数
         /// </summary>
         /// <returns></returns>
-        public static int GetLevels()
+        public int GetLevels()
         {
             return 0;
         }

@@ -20,6 +20,7 @@ namespace Calucator_Game
         private void Form1_Load(object sender, EventArgs e)
         {
             //读取关卡数据
+            //ReadFile();
         }
 
         private void button1_MouseDown(object sender, MouseEventArgs e)
